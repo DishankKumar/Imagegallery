@@ -1,0 +1,5 @@
+<h1 style="text-align: center; color: aliceblue;">Gallery</h1>
+<input #imageInput hidden="true" type="file"  (change)="onSelectFile($event)" />
+<button mat-flat-button color="primary" (click)="imageInput.click()" style= " margin-left:650px; width: 60px; height: 25px;">upload</button>
+<div>
+<img *ngFor='let url of urls'  [src]="url" height="200" class="img-thumbnail" alt="Cinque Terre"> <br/></div>
